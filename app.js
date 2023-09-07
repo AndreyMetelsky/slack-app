@@ -9,7 +9,7 @@ const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
-  logLevel: LogLevel.DEBUG,
+  logLevel: LogLevel.ERROR,
 });
 
 /** Register Listeners */
@@ -24,3 +24,4 @@ registerListeners(app);
     console.error('Unable to start App', error);
   }
 })();
+
